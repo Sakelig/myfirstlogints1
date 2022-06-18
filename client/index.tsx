@@ -1,4 +1,5 @@
 import React from "react";
 import ReactDOM from 'react-dom'
+import {Login} from "./login";
 
-ReactDOM.render(<h1>Hey</h1>, document.getElementById("app"))
+ReactDOM.render(<Login/>, document.getElementById("app"))
