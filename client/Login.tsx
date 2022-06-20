@@ -21,8 +21,7 @@ export function Login(){
                 <form onSubmit={handleSubmit}>
                     <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder={"Username"} type="text"/>
                     <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Password"} type="password"/>
-                    <button>Submit
-                    </button>
+                    <button>Submit</button>
                 </form>
             </div>
             <Link to={"/"}>Back</Link>
