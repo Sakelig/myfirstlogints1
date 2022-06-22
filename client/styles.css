@@ -11,10 +11,38 @@ body {
 }
 
 .viewContainer{
-
+    background-color: red;
     position: relative;
     display: block;
     width: 1200px;
     height: 700px;
     overflow: hidden;
 }
+
+.preLoginContainer{
+    background-color: red;
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.centerContent{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.boxStyling{
+    background-color: orangered;
+    border: white 4px solid;
+    border-radius: 4px;
+    outline: 2px solid black;
+    color: saddlebrown;
+    font-weight: bold;
+    padding: 7px;
+    margin: 3px;
+    flex: 1;
+}
+

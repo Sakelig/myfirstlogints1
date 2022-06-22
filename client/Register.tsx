@@ -13,7 +13,7 @@ export function Register(){
         console.log(password)
     }
 
-    return <div className={"viewContainer"}>
+    return <div className={"preLoginContainer"}>
         This is a register page!
         <div>
             <form onSubmit={handleSubmit}>

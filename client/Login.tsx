@@ -14,14 +14,20 @@ export function Login(){
     }
 
 
-    return <div className={"viewContainer"}>
+    return <div className={"preLoginContainer"}>
         Hello!
-        <div>
+        <div className={"centerContent"}>
             <div>
                 <form onSubmit={handleSubmit}>
-                    <input value={username} onChange={(e) => setUsername(e.target.value)} placeholder={"Username"} type="text"/>
-                    <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Password"} type="password"/>
-                    <button>Submit</button>
+                    <div>
+                        <input className={"boxStyling"} value={username} onChange={(e) => setUsername(e.target.value)} placeholder={"Username"} type="text"/>
+                    </div>
+                    <div>
+                        <input className={"boxStyling"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Password"} type="password"/>
+                    </div>
+                    <div>
+                        <button style={{width: 199}} className={"boxStyling"} >Login</button>
+                    </div>
                 </form>
             </div>
             <Link to={"/"}>Back</Link>
