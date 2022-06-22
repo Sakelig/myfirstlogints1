@@ -1,10 +1,13 @@
 import * as React from 'react'
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useState} from "react";
 
 export function Register(){
     const [email, setEmail] = useState("")
+    const [email2, setEmail2] = useState("")
+    const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+    let navigate = useNavigate()
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -15,11 +18,24 @@ export function Register(){
 
     return <div className={"preLoginContainer"}>
         This is a register page!
-        <div>
+        <div style={{padding: 50}}/>
+        <div className={"centerContent"}>
             <form onSubmit={handleSubmit}>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={"Email"} type="text"/>
-                <input value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Password"} type="password"/>
-                <button>Submit</button>
+                <div>
+                    <input style={{width: 326}} className={"boxStyling"} value={username} onChange={(e) => setUsername(e.target.value)} placeholder={"Enter username..."} type="text"/>
+                </div>
+                <div>
+                    <input style={{width: 326}} className={"boxStyling"} value={email} onChange={(e) => setEmail(e.target.value)} placeholder={"Enter email..."} type="text"/>
+                </div>
+                <div>
+                    <input style={{width: 326}} className={"boxStyling"} value={email2} onChange={(e) => setEmail2(e.target.value)} placeholder={"Enter email again..."} type="text"/>
+                </div>
+                <div>
+                    <input style={{width: 326}} className={"boxStyling"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Enter password..."} type="password"/>
+                </div>
+                <button style={{width: 160}} className={"boxStyling"}>Cancel</button>
+                <button style={{width: 160}} className={"boxStyling"}>Submit</button>
+
             </form>
         </div>
         <Link to={"/"}>Back</Link>

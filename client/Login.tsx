@@ -17,7 +17,7 @@ export function Login(){
 
     return <div className={"preLoginContainer"}>
         Hello!
-        <div style={{padding: 20}}/>
+        <div style={{padding: 40}}/>
         <div className={"centerContent"}>
             <div>
                 <form onSubmit={handleSubmit}>
@@ -32,12 +32,11 @@ export function Login(){
                     </div>
                     <div style={{padding: 20}}/>
                 </form>
-                <div style={{justifyItems: "fit"}}>
+                <div>
                     <button className={"boxStyling"} onClick={() => navigate("/")}>Register</button>
                     <button className={"boxStyling"}>Forgot password</button>
                     <button className={"boxStyling"}>Play as Guest</button>
                 </div>
-            <Link to={"/"}>Back</Link>
             </div>
         </div>
     </div>
