@@ -33,9 +33,10 @@ export function Register(){
                 <div>
                     <input style={{width: 326}} className={"boxStyling"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Enter password..."} type="password"/>
                 </div>
-                //TODO this cancel will submit the form when it should not
-                <button style={{width: 160}} className={"boxStyling"} onClick={() => navigate("/")}>Cancel</button>
-                <button style={{width: 160}} className={"boxStyling"}>Submit</button>
+                {/*Cancel should be into its own function to prevent the
+                 default form sending*/}
+                <button style={{width: 157}} className={"boxStyling"} onClick={() => navigate("/")}>Cancel</button>
+                <button style={{width: 157}} className={"boxStyling"}>Submit</button>
 
             </form>
         </div>
