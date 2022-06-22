@@ -14,7 +14,7 @@ export function Login(){
     }
 
 
-    return <div>
+    return <div className={"viewContainer"}>
         Hello!
         <div>
             <div>
