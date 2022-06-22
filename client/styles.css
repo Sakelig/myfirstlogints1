@@ -43,6 +43,11 @@ body {
     font-weight: bold;
     padding: 7px;
     margin: 3px;
+
+}
+
+.rowButtons{
+    display: flex;
     flex: 1;
 }
 
