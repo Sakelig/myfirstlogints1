@@ -33,7 +33,8 @@ export function Register(){
                 <div>
                     <input style={{width: 326}} className={"boxStyling"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={"Enter password..."} type="password"/>
                 </div>
-                <button style={{width: 160}} className={"boxStyling"}>Cancel</button>
+                //TODO this cancel will submit the form when it should not
+                <button style={{width: 160}} className={"boxStyling"} onClick={() => navigate("/")}>Cancel</button>
                 <button style={{width: 160}} className={"boxStyling"}>Submit</button>
 
             </form>
