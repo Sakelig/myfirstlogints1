@@ -11,7 +11,7 @@ body {
 }
 
 .viewContainer{
-    background-color: darkblue;
+    background-color: red;
     position: relative;
     display: block;
     width: 1200px;

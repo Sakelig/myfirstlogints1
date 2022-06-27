@@ -12,6 +12,11 @@ export function Login(){
         console.log("wow")
         console.log(username)
         console.log(password)
+
+        const user = {username, password}
+        localStorage.setItem('user', JSON.stringify(user))
+
+        navigate("/home")
     }
 
 
